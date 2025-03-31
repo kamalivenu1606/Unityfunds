@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="logo.png">
+  <link rel="icon" href="logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UnityFunds - Create Campaign</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms & Services</a>
+    </nav>
+    <h1>Create a Campaign</h1>
+    <form id="createCampaignForm">
+      <label for="patientDetails">Patient/Project Details:</label>
+      <input type="text" id="patientDetails" name="patientDetails" placeholder="Enter patient or project details" required />
+      
+      <label for="goalAmount">Goal Amount:</label>
+      <input type="number" id="goalAmount" name="goalAmount" placeholder="Enter goal amount" required />
+      
+      <label for="collectedAmount">Collected Amount (if any):</label>
+      <input type="number" id="collectedAmount" name="collectedAmount" placeholder="Enter collected amount (or 0)" required />
+      
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" name="endDate" required />
+      
+      <button type="submit">Submit Campaign</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

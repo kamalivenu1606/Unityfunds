@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UnityFunds - Payment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms & Services</a>
+    </nav>
+    <h1>Donation Payment</h1>
+    <center><h4>(Fill the bank details to donate money)</h4></center>
+    <form id="paymentForm">
+      <label for="donorName">User name:</label>
+      <input type="text" id="donorName" name="donorName" required />
+      
+      <label for="mobile">Mobile No:</label>
+      <input type="tel" id="mobile" name="mobile" required />
+      
+      <label for="bankName">Bank Name:</label>
+      <input type="text" id="bankName" name="bankName" required />
+      
+      <label for="IFSC code">IFSC code:</label>
+      <input type="text" id="IFSC code" name="IFSC code" required />
+      
+      <label for="Account no">Account no:</label>
+      <input type="text" id="Account no" name="Account no" required />
+      
+      <label for="donationAmount">Donation Amount:</label>
+      <input type="number" id="donationAmount" name="donationAmount" required />
+      
+      <button type="submit">Pay</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

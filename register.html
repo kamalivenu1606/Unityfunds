@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UnityFunds - Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <!-- Only logged in users should access register, but we provide the links as requested -->
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms & Services</a>
+    </nav>
+    <h1>Register</h1>
+    <form id="registerForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+      
+      <label for="role">Role:</label>
+      <select id="role" name="role">
+        <option value="">--Select Role--</option>
+        <option value="donor">Donor</option>
+        <option value="fundraiser">Fundraiser</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
